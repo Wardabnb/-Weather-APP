@@ -1,0 +1,254 @@
+body{  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #0b111d;
+    font-family:sans-serif
+}
+header {
+    margin: 20px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #202c3c;
+   height: 55em;
+   color: white;
+   border-radius: 10px;
+
+}
+nav{
+   height: max-content;
+}
+ul{
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+
+}
+.logo{
+   margin-left: 50px;
+   padding: 10px;
+   margin-top: 10px;
+   margin-right: 50px;
+   text-align: center;
+   font-size: 30px;
+   background-color: #577094;
+}
+ul .menu{
+    list-style: none;
+   
+   
+}
+ul i{
+  
+   font-size: 20px;
+
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+
+    font-size: small;
+}
+main{
+    margin: 20px;
+    display: flex;
+}
+main form input{
+
+    padding: 10px 60em 10px 10px;
+    border-radius: 10px;
+    border: 1 solid black;
+    background-color: rgba(32,42,61,255);
+   
+}
+input::placeholder {    color: white; 
+      }
+
+.infos{
+    display: flex;
+    margin: 40px;
+    color: white;
+}
+.temp{
+    padding-top: 30px;
+    font-size: 50px;
+}
+.infos-text{
+    flex-grow: 1;
+}
+.infos-text .city{
+    margin: 0px;
+}
+.infos-text p{
+    margin: 0;
+}
+.today{
+    
+    background-color:#202c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.sun-today{
+    color: yellow;
+    font-size: 30px;
+
+}
+
+.sunny-day h3{
+    padding-top: 30px
+}
+.cloudy-sunny-day h3{
+    padding-top: 10px
+}
+.cloudy-sunny-day p{
+    padding-top: 1px;
+}
+.cloudy-day h3{
+    padding-top: 20px;
+}
+.fa-cloud{
+    font-size: 30px;
+}
+.rainy-day{
+ 
+    font-size: 30px;
+
+}
+.storm{
+    font-size: 30px;
+}
+
+.info-7day{
+    display: flex;
+
+}
+.info-today{
+        display: flex; 
+        gap: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+}
+
+.info-7day h4{
+    display: flex;
+    gap: 3rem;
+}
+
+.condition{
+     
+    background-color: #202c3c;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+   
+}
+
+.header{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.header h5{
+    flex-grow: 1;
+}
+.header button {
+   margin: 10px;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #0b7de0;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de taille égale */
+    margin-left: 20px;
+    margin-top: 0;
+ 
+    
+  }
+  .ele-con{
+    margin: 20px;
+    width: max-content;
+  }
+.ele-con p{
+    margin: 0;
+}
+.ele-con h2{
+    margin: 0;
+    text-align: center;
+}
+.part2{
+    margin: 40px;
+    color: white;
+    background-color: #222b3c;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.part2 h5{
+    padding: 30px;
+}
+.part2-info{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.part2-info div{
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    width: 20em;
+}
+.part2-info div h6{
+    flex-grow: 1;
+    padding-right: 50px;
+  
+
+}
+.part2-info div h4{
+    flex-grow: 1;
+    font-size: small;
+}
+.part2-info div p{
+    flex-grow: 1;
+    padding-left: 60px;
+}
+.part2-info div p span{
+    flex-grow: 1;
+    padding-left: 60px;
+    font-weight: bold;
+}
+.part1{
+    width: 60em;
+}
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-wrapper .fa-cloud-sun {
+    position: absolute;
+    padding: 0px;
+    
+}
+
+.icon-wrapper .cloud {
+    color: white;
+    clip-path: inset(0  0 0 50%); /* Masque la moitié supérieure pour afficher seulement le nuage */
+}
+
+.icon-wrapper .sun {
+    color: yellow;
+    clip-path: inset(50% 0 0% 50); /* Masque la moitié inférieure pour afficher seulement le soleil */
+}
