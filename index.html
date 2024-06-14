@@ -1,169 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <i class="fa-solid fa-wind"></i>
-        </div>
-        <nav>
-           
-            <ul>
-               <div class="element"> <i class="fa-solid fa-smog"></i>
-                <li class="menu"><a href="#">Weather</a></li></div>
-               <div class="element"> <i class="fa-solid fa-list"></i>
-                <li class="menu"><a href="#">Ceties</a></li></div>
-               <div class="element">  <i class="fa-solid fa-map"></i>
-                <li class="menu"><a href="#">Map</a></li></div>
-               <div class="element"> <i class="fa-solid fa-sliders"></i>
-                <li class="menu"><a href="#">Settings</a></li>
-               </div>     
-            </ul>
-        </nav>
-
+      <div class="logo">
+        <i class="fa-solid fa-wind"></i>
+      </div>
+      <nav>
+        <ul>
+          <div class="element">
+            <i class="fa-solid fa-smog"></i>
+            <li class="menu"><a href="#">Weather</a></li>
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-list"></i>
+            <li class="menu"><a href="#">Ceties</a></li>
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-map"></i>
+            <li class="menu"><a href="#">Map</a></li>
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-sliders"></i>
+            <li class="menu"><a href="#">Settings</a></li>
+          </div>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="part1">
-            <div class="search">
-                <form action="">
-                    <input type="text" placeholder="Search for Cities">
-                </form>
+      <div class="part1">
+        <div class="search">
+          <form id="searchForm">
+            <input type="text" id="cityInput" placeholder="Search for Cities" />
+          </form>
+        </div>
+        <div class="infos">
+          <div class="infos-text">
+            <h1 class="city">City Name</h1>
+            <p class="rain-chance">Chance of rain: 0%</p>
+            <h1 class="temp">0°</h1>
+          </div>
+          <img src="assets/sun.png" alt="" height="250px" width="400px" />
+        </div>
+        <section class="today">
+          <h5>TODAY'S FORECAST</h5>
+          <div class="info-today">
+            <div class="cloudy-day">
+              <p>6.00 AM</p>
+              <i class="fa-solid fa-cloud"></i>
+              <h3>25°</h3>
             </div>
-            <div class="infos">
-                <div class="infos-text"> 
-                    <h1 class="city">Madrid</h1>
-                    <p>chance of rain: 0%</p>
-                    <h1 class="temp">31°</h1>
-                </div>
-            <img src="assets/sun.png" alt="" height="250px" width="400px">
-                
-            </div >
-            <section class="today">
-                <h5>TODAY'S FORECAST</h5>
-                <div class="info-today">
-                    <div class="cloudy-day">
-                        <p>6.00 AM</p>
-                        <i class="fa-solid fa-cloud "></i>
-                        <h3>25°</h3>
-                    </div>
-                    <hr>
-                    <div class="cloudy-sunny-day">
-                        <p>9.00 AM</p>
-                        <img src="assets/cloudy_237867.png" alt="" height="40px">
-                        <h3>28°</h3>
-                    </div>
-                    <hr>
-                    <div class="sunny-day">
-                        <p>12.00 PM</p>
-                        <i class="fa-sharp fa-solid fa-sun sun-today"></i>
-                        <h3>33°</h3>
-                    </div>
-                    <hr>
-                    <div class="sunny-day">
-                        <p>3.00 PM</p>
-                        <i class="fa-sharp fa-solid fa-sun sun-today"></i>
-                        <h3>34°</h3>
-                    </div>
-                    <hr>
-                    <div class="sunny-day">
-                        <p>6.00 PM</p>
-                        <i class="fa-sharp fa-solid fa-sun sun-today"></i>
-                        <h3>32°</h3>
-                    </div>
-                    <hr>
-                    <div class="cloudy-sunny-day">
-                        <p>9.00 PM</p>
-                        <img src="assets/cloudy_237867.png" alt="" height="40px">
-                        <h3>30°</h3>
-                    </div>
+            <hr />
+            <div class="cloudy-sunny-day">
+              <p>9.00 AM</p>
+              <img src="assets/cloudy_237867.png" alt="" height="40px" />
+              <h3>28°</h3>
+            </div>
+            <hr />
+            <div class="sunny-day">
+              <p>12.00 PM</p>
+              <i class="fa-sharp fa-solid fa-sun sun-today"></i>
+              <h3>33°</h3>
+            </div>
+            <hr />
+            <div class="sunny-day">
+              <p>3.00 PM</p>
+              <i class="fa-sharp fa-solid fa-sun sun-today"></i>
+              <h3>34°</h3>
+            </div>
+            <hr />
+            <div class="sunny-day">
+              <p>6.00 PM</p>
+              <i class="fa-sharp fa-solid fa-sun sun-today"></i>
+              <h3>32°</h3>
+            </div>
+            <hr />
+            <div class="cloudy-sunny-day">
+              <p>9.00 PM</p>
+              <img src="assets/cloudy_237867.png" alt="" height="40px" />
+              <h3>30°</h3>
+            </div>
+          </div>
+        </section>
+        <section class="condition">
+          <div class="header">
+            <h5>AIR CONDITIONS</h5>
+            <button>See more</button>
+          </div>
 
-                </div>
-            </section>
-            <section class="condition">
-                <div class="header">
-                    <h5>AIR CONDITIONS</h5>
-                    <button>See more</button>
-                </div>
-                
-                <div class="container">
-                    <div class="ele-con"> 
-                        <p><i class="fa-solid fa-temperature-half"></i> Real Feel</p>
-                        <h2>30°</h2>
-                    </div>
-                    <div class="ele-con">
-                    
-                        <p> <i class="fa-solid fa-droplet"></i> Chance of rain</p>
-                        <h2>0%</h2>
-                    </div>
-                    <div class="ele-con">
-                    
-                        <p> <i class="fa-solid fa-wind"></i> Wind</p>
-                        <h2>0.2 km/h</h2>
-                    </div>
-                    <div class="ele-con">
-                    
-                        <p> <i class="fa-solid fa-sun"></i> UV index</p>
-                        <h2>3</h2>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="part2">
-            <h5>7-DAY FORECAST</h5>
-            <div class="part2-info">
-                <div class="info-7day">
-                    <h6>Today</h6>
-                    
-                    <h4><i class="fa-solid fa-sun sun-today"></i><span class="text-i">Sunny</span></h4>
-                    <p><span>36</span>/22</p>
-                </div>
-                <hr>
-                <div class="info-7day">
-                    <h6>Tue</h6>   
-                    <h4><i class="fa-solid fa-sun sun-today"></i> <span  class="text-i">Sunny</span></h4>
-                    <p><span>37</span>/21</p>
-                </div>
-                <hr>
-                <div class="info-7day">
-                    <h6>Wed</h6>  
-                    <h4><i class="fa-solid fa-sun sun-today"></i> <span class="text-i">Sunny</span></h4>
-                    <p><span>37</span>/21</p>
-                </div>
-                <hr>
-                <div class="info-7day">
-                    <h6>Thu</h6>
-                    <h4><i class="fa-solid fa-cloud"></i> <span  class="text-i">Cloudy</span></h4>
-                    <p><span>37</span>/21</p>
-                </div>
-                <hr>
-                <div class="info-7day">
-                    <h6>Fri</h6> 
-                    <h4><i class="fa-solid fa-cloud"></i><span  class="text-i"> Cloudy</span></h4>
-                    <p><span>37</span>/21</p>
-                </div>
-                <hr>
-                <div class="info-7day">
-                    <h6>Sat</h6>
-                    <h4><i class="fa-solid fa-cloud-showers-heavy rainy-day"></i> <span class="text-i">Rainy</span></h4>
-                    <p><span>37</span>/21</p>
-                </div>
-                <hr>
-                <div class="info-7day">
-                    <h6>Sun</h6>
-                    <i></i>
-                    <h4><i class="fa-solid fa-bolt storm"></i> <span  class="text-i">Storm</span> </h4>
-                    <p><span>37</span>/21</p>
-                </div>
-               
+          <div class="container">
+            <div class="ele-con">
+              <p><i class="fa-solid fa-temperature-half"></i> Real Feel</p>
+              <h2>30°</h2>
             </div>
+            <div class="ele-con">
+              <p><i class="fa-solid fa-droplet"></i> Chance of rain</p>
+              <h2>0%</h2>
+            </div>
+            <div class="ele-con">
+              <p><i class="fa-solid fa-wind"></i> Wind</p>
+              <h2>0.2 km/h</h2>
+            </div>
+            <div class="ele-con">
+              <p><i class="fa-solid fa-sun"></i> UV index</p>
+              <h2>3</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="part2">
+        <h5>7-DAY FORECAST</h5>
+        <div class="part2-info">
+          <div class="info-7day">
+            <h6>Today</h6>
+
+            <h4>
+              <i class="fa-solid fa-sun sun-today"></i
+              ><span class="text-i">Sunny</span>
+            </h4>
+            <p><span>36</span>/22</p>
+          </div>
+          <hr />
+          <div class="info-7day">
+            <h6>Tue</h6>
+            <h4>
+              <i class="fa-solid fa-sun sun-today"></i>
+              <span class="text-i">Sunny</span>
+            </h4>
+            <p><span>37</span>/21</p>
+          </div>
+          <hr />
+          <div class="info-7day">
+            <h6>Wed</h6>
+            <h4>
+              <i class="fa-solid fa-sun sun-today"></i>
+              <span class="text-i">Sunny</span>
+            </h4>
+            <p><span>37</span>/21</p>
+          </div>
+          <hr />
+          <div class="info-7day">
+            <h6>Thu</h6>
+            <h4>
+              <i class="fa-solid fa-cloud"></i>
+              <span class="text-i">Cloudy</span>
+            </h4>
+            <p><span>37</span>/21</p>
+          </div>
+          <hr />
+          <div class="info-7day">
+            <h6>Fri</h6>
+            <h4>
+              <i class="fa-solid fa-cloud"></i
+              ><span class="text-i"> Cloudy</span>
+            </h4>
+            <p><span>37</span>/21</p>
+          </div>
+          <hr />
+          <div class="info-7day">
+            <h6>Sat</h6>
+            <h4>
+              <i class="fa-solid fa-cloud-showers-heavy rainy-day"></i>
+              <span class="text-i">Rainy</span>
+            </h4>
+            <p><span>37</span>/21</p>
+          </div>
+          <hr />
+          <div class="info-7day">
+            <h6>Sun</h6>
+            <i></i>
+            <h4>
+              <i class="fa-solid fa-bolt storm"></i>
+              <span class="text-i">Storm</span>
+            </h4>
+            <p><span>37</span>/21</p>
+          </div>
         </div>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
